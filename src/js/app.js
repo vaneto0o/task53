@@ -1,6 +1,7 @@
 import "../scss/app.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
+  //THis block will be executed once page is loaded and ready
   
   const price=document.getElementsByClassName('price');
   var elements = document.getElementByClassName('product');
