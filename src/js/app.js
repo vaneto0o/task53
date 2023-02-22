@@ -3,9 +3,12 @@ import "../scss/app.scss";
 window.addEventListener("DOMContentLoaded", () => {
   //THis block will be executed once page is loaded and ready
   
-  const price=document.getElementsByClassName('price');
-  var elements = document.getElementByClassName('product');
-  for(var i=0; i < elements.length; i++){
-    elements[i].setAttribure('data-price', price[0].innerHTML);
-  }
+  var productDiv = document.querySelector('.product');
+  var productPrice = document.querySelectorAll('p')[1].innerHTML;
+  var span = document.createElement('span');
+  span.class = "data-price";
+  span.className = "data-price";
+  productDiv.setAttribute('data-price', productPrice);
+  productDiv.appendChild(span);
+
 });
